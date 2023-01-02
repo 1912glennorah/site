@@ -83,12 +83,12 @@ let gui = new dat.GUI();
 
 
 let parameters = {
-  speed: .1,
-  hue: .0,
-  hueVariation: .02,
-  gradient: .3,
+  speed: .13,
+  hue: .64,
+  hueVariation: .0,
+  gradient: .0,
   density: .0,
-  displacement: .66 };
+  displacement: .3 };
 
 
 
@@ -132,6 +132,8 @@ function initGui() {
     updateParameters();
   });
   updateParameters();
+  dat.GUI.toggleHide();
+
 }
 
 function updateParameters() {
